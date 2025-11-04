@@ -59,3 +59,9 @@ h1 { font-size: 16px; margin: 0; }
 #settings h2 { font-size: 13px; margin: 0 0 8px; color: #333; }
 .setting-row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
 .setting-row select { padding: 4px 6px; border: 1px solid #ccc; border-radius: 4px; background: #fff; }
+
+/* Footer links (privacy / support) */
+.popup-footer { margin-top: 14px; padding-top: 10px; border-top: 1px solid #f0f0f0; text-align: center; font-size: 12px; color: #666; }
+.popup-footer a { color: #1a73e8; text-decoration: none; margin: 0 6px; }
+.popup-footer a:hover { text-decoration: underline; }
+.popup-footer .sep { color: #bbb; margin: 0 4px; }
