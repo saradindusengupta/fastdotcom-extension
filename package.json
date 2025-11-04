@@ -1,0 +1,29 @@
+{
+  "name": "fastdotcom-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension for ad-free internet speed testing using Cloudflare's speedtest engine",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "keywords": [
+    "chrome-extension",
+    "speed-test",
+    "cloudflare",
+    "internet-speed"
+  ],
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.9.6"
+  },
+  "dependencies": {
+    "@cloudflare/speedtest": "^1.7.0"
+  }
+}
