@@ -46,7 +46,27 @@ Please note that this isn't an official extension from Cloudflare.
 
 ### Project structure
 
-See `docs/STRUCTURE.md` for a detailed description of the project's layout and the responsibilities of top-level folders and files.
+See [structure](docs/STRUCTURE.md) for a detailed description of the project's layout and the responsibilities of top-level folders and files.
+
+```text
+fastdotcom-extension/
+├── manifest.json            # Extension configuration (MV3)
+├── popup/
+│   ├── popup.html           # Popup UI (loaded from browser action)
+│   ├── popup.css            # Popup styles
+│   └── popup.js             # Popup script (no test logic yet)
+├── background/
+│   └── service_worker.js    # Background service worker (install log, message stub)
+├── content/
+│   └── content.js           # Content script scaffold (not yet injected)
+├── icons/
+│   └── README.md            # Guidance for adding icons
+├── docs/
+│   ├── LOADING.md           # How to load the extension unpacked
+│   └── STRUCTURE.md         # This file
+├── README.md                # Project overview
+└── LICENSE                  # License
+```
 
 ### Build commands
 
@@ -56,13 +76,14 @@ See `docs/STRUCTURE.md` for a detailed description of the project's layout and t
 
 Local loading / development
 
-If you want to load the extension into your browser for local development, see `docs/LOADING.md` for step-by-step instructions on loading the unpacked extension and running in development mode.
+If you want to load the extension into your browser for local development, see [Local Loading](docs/LOADING.md) for step-by-step instructions on loading the unpacked extension and running in development mode.
 
 ### Data storage
 
 The extension stores only the last two completed test results in `chrome.storage.local`. No data is sent to external servers beyond what's required for the speed test itself (to Cloudflare's speed test servers).
 
 ### Architecture
+
 
 This project uses:
 
@@ -76,6 +97,9 @@ This project uses:
 - All test results are stored locally in your browser
 - No analytics or tracking
 - Only communicates with Cloudflare's speed test servers (`https://speed.cloudflare.com/*`)
+- [Privacy Policy](PRIVACY.md)
+
+
 
 ## License
 
