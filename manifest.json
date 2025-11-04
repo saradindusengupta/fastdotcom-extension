@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Cloudflare Speed test",
+  "description": "A Chrome extension that implements the Cloudflare speed test engine to your toolbar.",
+  "version": "0.3.0",
+  "action": {
+    "default_title": "Speed Test",
+    "default_popup": "popup/popup.html"
+  },
+  "background": {
+    "service_worker": "background/service_worker.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://speed.cloudflare.com/*"
+  ]
+}
