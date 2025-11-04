@@ -174,13 +174,13 @@
         console.error('Failed to load IP:', e);
         ipaddrEl && (ipaddrEl.textContent = '—');
         btnCopyIp?.setAttribute('disabled', 'true');
-        
-        // Show specific error for network issues
-        if (e.name === 'AbortError') {
-          console.warn('IP fetch timed out');
-        } else if (!navigator.onLine) {
-          console.warn('Offline, cannot fetch IP');
+        let msg = 'Failed to load IP.';
+        if (!navigator.onLine) {
+            msg = '⚠️ No network connection. Please check your internet and try again.';
+        } else if (e.name === 'AbortError') {
+          msg = 'IP fetch timed out.';
         }
+        setStatus(msg);
       }
     }
 
