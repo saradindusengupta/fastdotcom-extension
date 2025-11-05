@@ -2,7 +2,9 @@
 
 A Chrome extension that provides a compact toolbar popup for running Cloudflare-powered internet speed tests with one click.
 
-Please note that this isn't an official extension from Cloudflare.
+> Please note that this isn't an official extension from Cloudflare.
+
+![Cloudflare Speedtest](assets/asset_1.png "Cloudflare Speedtest Screenshot") ![Cloudflare Speedtest](assets/asset_2.png "Cloudflare Speedtest Screenshot")
 
 ## Features
 
@@ -24,10 +26,7 @@ Please note that this isn't an official extension from Cloudflare.
 ### From Source
 
 1. Download source code (zipped file) from the latest release from [Release](https://github.com/saradindusengupta/cloudflare-speedtest-extension/releases)
-
-   
 2. Extract it to a location of your choice
-
 3. Load the extension in Chrome:
 
    - Open Chrome and go to `chrome://extensions/`
