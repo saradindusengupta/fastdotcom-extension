@@ -23,24 +23,17 @@ Please note that this isn't an official extension from Cloudflare.
 
 ### From Source
 
-1. Clone this repository (use your repository URL):
+1. Download source code (zipped file) from the latest release from [Release](https://github.com/saradindusengupta/cloudflare-speedtest-extension/releases)
 
-   ```bash
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
-   ```
-2. Install dependencies and build:
+   
+2. Extract it to a location of your choice
 
-   ```bash
-   npm install
-   npm run build
-   ```
 3. Load the extension in Chrome:
 
    - Open Chrome and go to `chrome://extensions/`
    - Enable "Developer mode" (top-right toggle)
    - Click "Load unpacked"
-   - Select the `fastdotcom-extension` directory
+   - Select the directory where it was extracted. It should be  similar to `cloudflare-speedtest-extension-x.y.z` where the `x.y.z` would be the version number.
 
 ## Development
 
